@@ -1,54 +1,32 @@
-# React + TypeScript + Vite
+# 📝 Daily Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple yet powerful **ToDo App** built using **React**, **TypeScript**, and **CSS**. It lets you manage your daily tasks efficiently with features to add, delete, and track your active and completed tasks. All tasks are stored in **localStorage**, so your data persists even after refreshing the page! 🚀
 
-Currently, two official plugins are available:
+🔗 **Live Demo**: [https://daily-task-manager-sooty.vercel.app/](https://daily-task-manager-sooty.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📸 Preview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![App Preview](https://user-images.githubusercontent.com/your-screenshot-path/preview.png)
+*(Optional - Add your own preview image by uploading it to your repo or GitHub Issues)*
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ✨ Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- ✅ Add new tasks
+- ❌ Delete tasks
+- 🔄 Mark tasks as **completed**
+- 📂 View tasks by **All**, **Active**, and **Completed**
+- 💾 Persistent storage using `localStorage` (refresh-safe)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## 🚀 Tech Stack
+
+- ⚛️ **React** – Frontend library
+- 🔷 **TypeScript** – Type-safe JavaScript
+- 🎨 **CSS** – Custom styling
+- ☁️ **Vercel** – Deployment platform
+
