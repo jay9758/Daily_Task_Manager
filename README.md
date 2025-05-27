@@ -6,13 +6,6 @@ A simple yet powerful **ToDo App** built using **React**, **TypeScript**, and **
 
 ---
 
-## 📸 Preview
-
-![App Preview](https://user-images.githubusercontent.com/your-screenshot-path/preview.png)
-*(Optional - Add your own preview image by uploading it to your repo or GitHub Issues)*
-
----
-
 ## ✨ Features
 
 - ✅ Add new tasks
