@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;700;900&family=Urbanist:wght@300;600&family=Inter:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: 'Lexend Deca', sans-serif;*/
+    font-family: 'Urbanist', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 10rem;
+    padding: 0 1rem;
+}
+
+main h2{
+    font-size: 3rem;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 4.8rem;
+}
+
+main h2 .icons{
+    color: #68B984;
+}
+
+/*===================*/
+/*navbar styling */
+/*====================*/
+
+nav{
+    width: 55rem;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: .1rem solid #ccc;
+}
+
+nav a{
+    font-size: 2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #ccc;
+    border-bottom: .3rem solid transparent;
+}
+
+nav a:hover{
+    border-color: #3A3845;
+}
+
+nav a.active {
+    color: #000;
+    border-color: #68B984;
+}
+
+/*===================*/
+/*Form  styling */
+/*====================*/
+
+form input{
+    border: .1rem solid #ccc;
+    border-radius: .3rem;
+    width: 45rem;
+    max-width: 100%;
+    margin: 4rem 0;
+    user-focus: none;
+    padding: .6rem 1rem;
+    font-size: 1.6rem;
+    letter-spacing: .06rem;
+    font-weight: bold;
+}
+
+form button{
+    padding: .8rem 2.8rem;
+    border: none;
+    border-radius: .3rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 2.4rem;
+    background-color: #68B984;
+    color: #fff;
+}
+
+label{
+    font-size: 1.5rem;
+    letter-spacing: .06rem;
+    color: #3A3845;
+    font-weight: bold;
+}
+
+/*===================*/
+/*todo task list */
+/*====================*/
+
+.main-task li{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    width: 50rem;
+    max-width: 100%;
+    min-height: 6rem;
+    border-bottom: .1rem solid #ccc;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.main-task li:first-child{
+    border-top: .1rem solid #ccc;
+}
+
+.main-task li:hover{
+    background-color: #fef2f2;
+}
+
+.main-task li input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: #D14D72;
+}
+
+.main-task li label {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    line-height: 1.4;
+    min-width: 0; /* Important for flexbox/grid to allow shrinking */
+}
+
+.main-task li button{
+    padding: .6rem 1rem;
+    width: 7rem;
+    background-color: #D14D72;
+    color: #FFF9F9;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: .1rem;
+    flex-shrink: 0;
+}
+
+.heading {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2d3748;
+    text-align: center;
+    margin: 2rem 0;
+    letter-spacing: -0.5px;
+}
+
+@media (max-width: 600px) {
+    .heading {
+        font-size: 3.5rem;
+        margin-top: -1rem;
+    }
+}
+
+/* =================== */
+/* Responsive Styles */
+/* =================== */
+
+@media (max-width: 554px) {
+    main {
+        margin-top: 5rem;
+        padding: 0 1rem;
+    }
+
+    nav {
+        width: 100%;
+        max-width: 90%;
+        flex-direction: column;
+        gap: 1.2rem;
+        padding-bottom: 1rem;
+        align-items: flex-start;
+    }
+
+    nav a {
+        font-size: 1.8rem;
+    }
+
+    form input {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    form button {
+        margin-left: 0;
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .main-task li {
+        width: 100%;
+        padding: 1.5rem 1rem;
+        gap: 1.2rem;
+        grid-template-columns: auto 1fr auto;
+    }
+
+    .main-task li label {
+        font-size: 1.4rem;
+        line-height: 1.5;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        hyphens: auto;
+        /* Ensure the label can shrink and wrap properly */
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .main-task li button {
+        width: auto;
+        min-width: 6rem;
+        padding: 0.5rem 1rem;
+        font-size: 1.2rem;
+        flex-shrink: 0;
+    }
+
+    .main-task li input[type="checkbox"] {
+        flex-shrink: 0;
+        margin-right: 0.5rem;
+    }
+}
